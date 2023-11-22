@@ -1,0 +1,42 @@
+# https://github.com/Tanveer-G/payFormPro-ModularRazorPayIntegration
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env.md
+# vercel
+.vercel
+
+#vsCode
+.vscode
+
+# Ignore testApis.http file
+testApis.http
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
