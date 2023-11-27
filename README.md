@@ -1,4 +1,4 @@
-# Tanveer's PayForm Pro: Modular Razor Pay Integration
+# Tanveer's PayForm Pro: Modular Razorpay Integration
 
 PayForm Pro is a robust Next.js application that simplifies RazorPay integration, providing a seamless experience for form submissions and secure payment processing. This modular solution combines a user-friendly frontend, efficient backend API routes, and local database storage to handle entries effortlessly. Explore the power of modular RazorPay integration with PayForm Pro!
 
@@ -83,7 +83,7 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial-S
 
 ## Contact
 
-For any inquiries or feedback, feel free to reach out to [Your Name](https://tanveer-portfolio.vercel.app/en-US/contact).
+For any inquiries or feedback, feel free to reach out to me [here](https://tanveer-portfolio.vercel.app/en-US/contact).
 
 
 ---
