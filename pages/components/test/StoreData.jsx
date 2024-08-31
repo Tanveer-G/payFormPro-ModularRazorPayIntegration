@@ -19,7 +19,7 @@ export default function StoreData() {
   const detailedData = { ...details, ...data };
 
   const handler = () => {
-    console.log("connecting to local DB for storing data.");
+    console.log("connecting to DB for storing data.");
     storeFormData(detailedData);
   };
 

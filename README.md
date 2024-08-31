@@ -1,6 +1,6 @@
-# Tanveer's PayForm Pro: Modular Razorpay Integration
+# Tanveer's PayForm Pro: Modular Razorpay Integration (Version 2.0)
 
-PayForm Pro is a robust Next.js application that simplifies RazorPay integration, providing a seamless experience for form submissions and secure payment processing. This modular solution combines a user-friendly frontend, efficient backend API routes, and local database storage to handle entries effortlessly. Explore the power of modular RazorPay integration with PayForm Pro!
+PayForm Pro is a robust Next.js application that simplifies RazorPay integration, providing a seamless experience for form submissions and secure payment processing. This modular solution combines a user-friendly frontend, efficient backend API routes, and MangoDB data management to handle transaction entries effortlessly. Explore the power of modular RazorPay integration with PayForm Pro!
 
 ![Home Screen or OpenGraph Image](./public/opengraph-image.png)
 
@@ -9,31 +9,42 @@ PayForm Pro is a robust Next.js application that simplifies RazorPay integration
 ### 1. User-Friendly Form
 Capture user input for Name, Email, Price, and Currency with a sleek and intuitive form component. Input fields are validated to ensure accurate data submission.
 
-### 2. Data Storage
-Effortlessly store form data locally in a JSON file or database, allowing users to retrieve and view their stored entries.
+### 2. Data Storage with MongoDB
+Transition from local JSON file storage to MongoDB for scalable and secure data management. This update improves data retrieval and storage efficiency.
 
 ### 3. Modular RazorPay Integration
 Integrate seamlessly with Razorpay API for streamlined and secure payment processing. Handle both successful and failed payment scenarios, updating the UI based on payment status.
 
-### 4. Responsive UI
+### 4. Razorpay Webhook Integration
+Utilize Razorpay webhooks to verify transactions server-side, ensuring accurate and reliable payment verification.
+
+### 5. Responsive UI
 A responsive and dynamic user interface built with React and Tailwind CSS, ensuring an optimal viewing experience across devices.
 
-### 5. Test Page
+### 6. Navigation Bar
+Navigate easily with the new navigation bar featuring:
+- **Home**: Access the main form page for transactions.
+- **Dashboard**: View the 24-hour transaction history table.
+- **Dev-Tools**: Check breakpoints, inspect hooks, and verify transactions.
+- **APIs**: Access documentation pages and resources (PDFs, GitHub pages).
+- **Hooks**: Access documentation pages and resources (PDFs, GitHub pages).
+
+### 7. Dev-Tools / Test Page 
 Explore the app's functionalities with a dedicated test page. Test different scenarios, including form submissions and payment processing, to ensure a smooth user experience.
 
-### 6. Next.js API Routes
+### 8. Next.js API Routes
 Efficient backend API routes built with Next.js to handle form submissions and payment processing seamlessly.
 
-### 7. Local Database
-Persistently store form data, providing users with a reliable and consistent experience even after leaving or refreshing the page.
+### 9. DDoS Protection
+Implement protection to limit database access attempts to 7 times, preventing potential DDoS attacks and securing access.
 
-## 8. Error Handling and Security
+## 10. Error Handling and Security
 Implement robust error handling mechanisms for both the frontend and backend, providing intuitive error messages. Utilize different HTTP status codes such as 405 and 422 for specific scenarios. Ensure data validation and protect sensitive information, such as API keys. Log error messages to the console and display them appropriately on the user interface.
 
-### 9. Performance Optimization
+### 11. Performance Optimization
 Optimize both frontend and backend code for efficiency, ensuring fast response times for form submissions and payment processing.
 
-### 10. Scalability
+### 12. Scalability
 Design the system to handle an increasing number of form submissions and payments, making it scalable for future enhancements and expansions.
 
 
@@ -46,6 +57,8 @@ Design the system to handle an increasing number of form submissions and payment
 - [RTK Query](https://redux-toolkit.js.org/rtk-query/overview): A powerful data fetching and state management library built on top of Redux Toolkit. PayForm Pro leverages RTK Query for handling API calls, providing a clean and efficient way to manage remote data.
 
 - [Razorpay](https://razorpay.com/): A leading payment gateway platform. PayForm Pro integrates with Razorpay for secure and streamlined payment processing.
+
+- [MongoDB](https://www.mongodb.com/): A NoSQL database for scalable and flexible data storage.
 
 - [Shortid](https://www.npmjs.com/package/shortid): A simple, fast, and concise library for generating unique IDs. In PayForm Pro, Shortid is used for creating unique identifiers for receipts and orders.
 

@@ -10,7 +10,6 @@ const useDisplayRazorpay = () => {
   );
 
   const displayRazorpay = async (details) => {
-    console.log("Button Clicked useDisplayRazorpay", details);
 
     // Load Razorpay script
     try {
@@ -50,7 +49,7 @@ const useDisplayRazorpay = () => {
             razorpayOrderId: response.razorpay_order_id,
             razorpaySignature: response.razorpay_signature,
           };
-          // storing all data in Local DB
+          // storing all data in DB
           const detailedData = { ...details, ...paymentData }
           storeFormData(detailedData);
           // Verify the Razorpay payment

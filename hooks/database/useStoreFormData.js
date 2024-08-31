@@ -1,12 +1,12 @@
-import { usePostEntryMutation } from "@/redux/services/dbApi";
+import { useCreatePaymentMutation } from "@/redux/services/dbApi";
 
 const useStoreFormData = () => {
-  const [postEntry] = usePostEntryMutation();
+  const [createPayment] = useCreatePaymentMutation();
   const storeFormData = async (userOrderDetails, isFormValid = true) => {
 
     if (isFormValid) {
       try {
-        const {data} = await postEntry(userOrderDetails);
+        const {data} = await createPayment(userOrderDetails);
         console.log(data.message, userOrderDetails);
       } catch (error) {
         console.error(

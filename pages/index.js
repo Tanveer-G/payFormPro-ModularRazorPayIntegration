@@ -2,17 +2,15 @@ import { useSelector } from 'react-redux';
 import { selectLoading } from '@/redux/slices/loadingSlice';
 import Form from './components/Form';
 import Loading from './components/Loader/loading';
+import BrandHeader from './components/Layout/BrandHeader';
 
 export default function Index() {
   const isLoading = useSelector(selectLoading);
 
   return (
     <div className="relative z-10">
-      <div className="h-full min-h-screen w-max-full flex flex-col justify-center items-center relative">
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          PayForm <span className="text-blue-600 dark:text-blue-500">Pro</span>
-        </h1>
-        <p className="font-medium italic">"Effortless Form & Payment Integration"</p>
+      <div className="h-full max-h-[800px] w-max-full flex flex-col justify-center items-center relative">
+        <BrandHeader/>
         <Form />
       </div>
       {/* Overlay to prevent interactions */}

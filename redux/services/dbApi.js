@@ -5,18 +5,17 @@ export const dbApi = createApi({
   reducerPath: "dbApi", //! reducerPath: "dbApiPath",
   baseQuery: fetchBaseQuery({ baseUrl: "/api/" }),
   endpoints: (builder) => ({
-    // Existing endpoints
-    getEntries: builder.query({
-      query: () => "entries/entries",
+    getPayments: builder.query({
+      query: () => "payment",
     }),
-    postEntry: builder.mutation({
-      query: (formData) => ({
-        url: "entries/entries",
+    createPayment: builder.mutation({
+      query: (paymentData) => ({
+        url: "payment",
         method: "POST",
-        body: formData,
+        body: paymentData,
       }),
     }),
   }),
 });
 
-export const { useGetEntriesQuery, usePostEntryMutation } = dbApi;
+export const { useGetPaymentsQuery, useCreatePaymentMutation } = dbApi;
