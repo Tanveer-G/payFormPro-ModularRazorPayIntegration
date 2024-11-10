@@ -4,33 +4,37 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <title>Tanveer's payForm Pro: Modular RazorPay Integration</title>
         <meta
           name="description"
-          content="payForm Pro: Modular RazorPay Integration"
+          content="Learn and experience crystal-clear code for seamless, intuitive, and secure Razorpay API integration with data storage in MongoDB. Explore now!"
         />
         <meta
           name="keywords"
-          content="payForm pro, Tanveer,Razorpay Integration, Payment Processing, Entry Management, Payment Gateway Integration, Secure Payments"
+          content="payForm pro, Tanveer H., Razorpay API Integration, Tanveer PayForm Pro, Payment Gateway Integration, MongoDB Payment Storage, MongoDB with Razorpay, Payment Processing Tutorial, Test Payment Integration, Intuitive Payment Solutions"
         />
         <meta name="author" content="Tanveer H." />
         <meta
           property="og:title"
-          content="payForm Pro: Modular RazorPay Integration by Tanveer"
+          content="Tanveer's payForm Pro: Modular RazorPay Integration"
         />
         <meta
           property="og:description"
-          content="PayForm Pro: Simplify Your Payments with Effortless Form Integration and Razorpay. Securely payments, manage entries, and generate order seamlessly."
+          content="Learn and experience crystal-clear code for seamless, intuitive, and secure Razorpay API integration with data storage in MongoDB. Explore now!"
         />
         <meta property="og:image" content="./opengraph-image.png" />
-        <meta property="og:url" content="https://tanveer-payformpro.vercel.app" />
+        <meta
+          property="og:url"
+          content="https://tanveer-payformpro.vercel.app"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="payForm Pro: Modular RazorPay Integration by Tanveer H."
+          content="Tanveer's payForm Pro: Modular RazorPay Integration"
         />
         <meta
           name="twitter:description"
-          content="PayForm Pro: Simplify Your Payments with Effortless Form Integration and Razorpay. Securely payments, manage entries, and generate order seamlessly."
+          content="Learn and experience crystal-clear code for seamless, intuitive, and secure Razorpay API integration with data storage in MongoDB. Explore now!"
         />
         <meta name="twitter:image" content="./opengraph-image.png" />
       </Head>

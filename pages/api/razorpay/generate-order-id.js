@@ -1,6 +1,6 @@
 import Razorpay from "razorpay";
 import shortid from "shortid";
-import { nameRegex, emailRegex, priceRegex } from "../../../utils/regexList";
+import { nameRegex, emailRegex, priceRegex } from "@/utils/regexList";
 
 export default async function generateOrderID(req, res) {
   if (req.method === "POST") {

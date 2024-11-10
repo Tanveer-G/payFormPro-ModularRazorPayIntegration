@@ -1,7 +1,12 @@
+// Redux Toolkit
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
+
+// API services
 import { dbApi } from "./services/dbApi";
 import { razorpayApi } from "./services/razorpayAPI";
+
+// Slices
 import loadingReducer from './slices/loadingSlice';
 
 export const store = configureStore({

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 const navbar = [
   {
     name: "Home",
@@ -24,8 +25,8 @@ const navbar = [
 ];
 
 export default function Navbar() {
-  const {pathname} =useRouter();
-console.log(pathname)
+  const { pathname } = useRouter();
+
   return (
     <nav className="flex justify-end w-full gap-x-4 bg-[#374151] p-3">
       {navbar.map(({ name, link }) => (
