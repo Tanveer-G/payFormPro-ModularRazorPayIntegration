@@ -1,6 +1,6 @@
 import connectToDB from "@/utils/lib/connectToDB";
 import Payment from "@/models/payment.model";
-import { errorHandler } from "@/middleware/errorHandler";
+import errorHandler from "@/middleware/errorHandler";
 
 // export async function getPayments(res) {
 //   try {
