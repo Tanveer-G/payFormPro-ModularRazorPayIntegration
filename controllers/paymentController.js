@@ -1,6 +1,9 @@
+// Internal utilities
 import connectToDB from "@/utils/lib/connectToDB";
-import Payment from "@/models/payment.model";
 import errorHandler from "@/middleware/errorHandler";
+
+// Models
+import Payment from "@/models/payment.model";
 
 // export async function getPayments(res) {
 //   try {
@@ -38,6 +41,7 @@ export async function createPayment(data, res) {
   try {
     await connectToDB();
     const newPayment = await Payment.create(data);
+    console.log("newPayment:", newPayment);
     res.status(201).json(newPayment);
   } catch (error) {
     errorHandler(res, error);

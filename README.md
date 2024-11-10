@@ -1,4 +1,4 @@
-# Tanveer's PayForm Pro: Modular Razorpay Integration (Version 2.0)
+# Tanveer's PayForm Pro: Modular Razorpay Integration (Version 3.0)
 
 PayForm Pro is a robust Next.js application that simplifies RazorPay integration, providing a seamless experience for form submissions and secure payment processing. This modular solution combines a user-friendly frontend, efficient backend API routes, and MangoDB data management to handle transaction entries effortlessly. Explore the power of modular RazorPay integration with PayForm Pro!
 
@@ -68,6 +68,9 @@ Design the system to handle an increasing number of form submissions and payment
 
 - [@vercel/analytics](https://vercel.com/docs/analytics): Analytics powered by Vercel. This package is integrated for tracking and gaining insights into the application's usage.
 
+- [@sentry/nextjs](https://docs.sentry.io/platforms/javascript/guides/nextjs/): An error tracking and performance monitoring tool. PayForm Pro integrates Sentry to capture errors and performance bottlenecks in both frontend and backend.
+
+- [react-toastify](https://github.com/fkhadra/react-toastify): A library for displaying customizable toasts (notifications). PayForm Pro uses Toastify for showing user-friendly feedback messages throughout the application.
 
 
 ## Getting Started

@@ -1,7 +1,12 @@
+// Controllers
 import { getPayments, createPayment } from "@/controllers/paymentController";
-import { nameRegex, emailRegex, priceRegex } from "@/utils/regexList";
+
+// Middleware
 import rateLimit from "@/middleware/rateLimit";
 import errorHandler from "@/middleware/errorHandler";
+
+// Utilities
+import { nameRegex, emailRegex, priceRegex } from "@/utils/regexList";
 
 export default async function handler(req, res) {
   try {

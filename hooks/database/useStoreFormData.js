@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import { useCreatePaymentMutation } from "@/redux/services/dbApi";
 
 const useStoreFormData = () => {
@@ -7,15 +8,18 @@ const useStoreFormData = () => {
     if (isFormValid) {
       try {
         const {data} = await createPayment(userOrderDetails);
-        console.log(data.message, userOrderDetails);
+        // console.info(data.message, userOrderDetails);
+        toast.info("Data has been successfully stored in the database.");
       } catch (error) {
         console.error(
           "Error: Failed to store data in DB. Server not responding or invalid details",
           error.message
         );
+        toast.error("Failed to store data. Please try again.");
       }
     } else {
-      console.error("Form not submitted. Please fix validation errors.");
+      console.warn("Form not submitted. Please fix validation errors.");
+      toast.warn("Form not submitted. Please fix validation errors.");
     }
   };
   return { storeFormData };
